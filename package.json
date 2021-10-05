@@ -1,0 +1,13 @@
+{
+  "name": "gym-script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "schedule-gym.js",
+  "scripts": {
+    "start": "node schedule-gym.js"
+  },
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "puppeteer": "^10.4.0"
+  }
+}
