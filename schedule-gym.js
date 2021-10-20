@@ -22,7 +22,7 @@ console.info(`Clock Time: ${date_ob.getHours()}:${date_ob.getMinutes()}`);
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   
-  const firstTimeOut = Math.floor(Math.random() * 120 * 1000);
+  const firstTimeOut = Math.floor(Math.random() * 180 * 1000);
   console.log(`Waiting for ${firstTimeOut/1000} seconds.`);
   await page.waitForTimeout(firstTimeOut);
 
@@ -44,7 +44,7 @@ console.info(`Clock Time: ${date_ob.getHours()}:${date_ob.getMinutes()}`);
   await page.type('#tbStartDate', requestDate);
   await page.focus('#drpStartTime');
   await page.waitForNetworkIdle();
-  await page.select('#drpStartTime', '0:17:05');
+  await page.select('#drpStartTime', '0:17:15');
   await page.waitForNetworkIdle();
   await page.screenshot({path: 'slot1_before.png'});
   await page.click('#cmdSubmitBookingReq');
@@ -62,7 +62,7 @@ console.info(`Clock Time: ${date_ob.getHours()}:${date_ob.getMinutes()}`);
   await page.type('#tbStartDate', requestDate);
   await page.focus('#drpStartTime');
   await page.waitForNetworkIdle();
-  await page.select('#drpStartTime', '0:17:05');
+  await page.select('#drpStartTime', '0:17:15');
   await page.waitForNetworkIdle();
   await page.screenshot({path: 'slot2_before.png'});
   await page.click('#cmdSubmitBookingReq');
